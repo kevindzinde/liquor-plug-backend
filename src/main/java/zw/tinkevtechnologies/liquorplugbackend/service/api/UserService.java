@@ -13,6 +13,5 @@ import java.util.Optional;
 public interface UserService  {
     CommonResponse saveUser(User user, HttpServletRequest request) throws MessagingException, UnsupportedEncodingException;
     Optional<User> findUserByUsername(String username);
-
     void makeAdmin(String username);
 }
